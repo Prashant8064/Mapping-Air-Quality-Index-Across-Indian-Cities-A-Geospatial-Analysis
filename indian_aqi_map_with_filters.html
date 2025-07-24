@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_280f09a964c2e131774d713e0587279d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_280f09a964c2e131774d713e0587279d" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_280f09a964c2e131774d713e0587279d = L.map(
+                "map_280f09a964c2e131774d713e0587279d",
+                {
+                    center: [20.5937, 78.9629],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 5,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_348a6b9710815e655a2c4b5eea4804be = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_348a6b9710815e655a2c4b5eea4804be.addTo(map_280f09a964c2e131774d713e0587279d);
+        
+    
+            var feature_group_2990f267015be81924f465272e2844eb = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_ba1116f6ab4e9c0896b94bbcfa0671d5 = L.circleMarker(
+                [12.9716, 77.5946],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2990f267015be81924f465272e2844eb);
+        
+    
+            circle_marker_ba1116f6ab4e9c0896b94bbcfa0671d5.bindTooltip(
+                `<div>
+                     <b>Bengaluru, Karnataka</b><br>AQI: 86
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2949e0578847a7639e55dab6dc1c9d92 = L.circleMarker(
+                [23.0225, 72.5714],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2990f267015be81924f465272e2844eb);
+        
+    
+            circle_marker_2949e0578847a7639e55dab6dc1c9d92.bindTooltip(
+                `<div>
+                     <b>Ahmedabad, Gujarat</b><br>AQI: 90
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6dbb04593367e80af7634285a70b4596 = L.circleMarker(
+                [26.9124, 75.7873],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2990f267015be81924f465272e2844eb);
+        
+    
+            circle_marker_6dbb04593367e80af7634285a70b4596.bindTooltip(
+                `<div>
+                     <b>Jaipur, Rajasthan</b><br>AQI: 50
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_73ecf0fa5b0a2f215322bf1bb4f08183 = L.circleMarker(
+                [21.1702, 72.8311],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2990f267015be81924f465272e2844eb);
+        
+    
+            circle_marker_73ecf0fa5b0a2f215322bf1bb4f08183.bindTooltip(
+                `<div>
+                     <b>Surat, Gujarat</b><br>AQI: 95
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_eda28258ae03478d4788f7195b0ece7e = L.circleMarker(
+                [21.1458, 79.0882],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2990f267015be81924f465272e2844eb);
+        
+    
+            circle_marker_eda28258ae03478d4788f7195b0ece7e.bindTooltip(
+                `<div>
+                     <b>Nagpur, Maharashtra</b><br>AQI: 51
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_efb0fed3c2a848a008ce0e9a651d3a3f = L.circleMarker(
+                [25.5941, 85.1376],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2990f267015be81924f465272e2844eb);
+        
+    
+            circle_marker_efb0fed3c2a848a008ce0e9a651d3a3f.bindTooltip(
+                `<div>
+                     <b>Patna, Bihar</b><br>AQI: 82
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            feature_group_2990f267015be81924f465272e2844eb.addTo(map_280f09a964c2e131774d713e0587279d);
+        
+    
+            var feature_group_e17b0f5e30f4dcd5b74a2c3bef13e12f = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_0c0bd232b3c9f2103709f65f09ede26b = L.circleMarker(
+                [19.076, 72.8777],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_e17b0f5e30f4dcd5b74a2c3bef13e12f);
+        
+    
+            circle_marker_0c0bd232b3c9f2103709f65f09ede26b.bindTooltip(
+                `<div>
+                     <b>Mumbai, Maharashtra</b><br>AQI: 160
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a96d1a98c21203bb7a7933c0ec821033 = L.circleMarker(
+                [22.5726, 88.3639],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_e17b0f5e30f4dcd5b74a2c3bef13e12f);
+        
+    
+            circle_marker_a96d1a98c21203bb7a7933c0ec821033.bindTooltip(
+                `<div>
+                     <b>Kolkata, West Bengal</b><br>AQI: 200
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2e3b6cb3fea75f162bf531711355200e = L.circleMarker(
+                [18.5204, 73.8567],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_e17b0f5e30f4dcd5b74a2c3bef13e12f);
+        
+    
+            circle_marker_2e3b6cb3fea75f162bf531711355200e.bindTooltip(
+                `<div>
+                     <b>Pune, Maharashtra</b><br>AQI: 147
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e796191a9af450f4f47202668d01433a = L.circleMarker(
+                [26.8467, 80.9462],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_e17b0f5e30f4dcd5b74a2c3bef13e12f);
+        
+    
+            circle_marker_e796191a9af450f4f47202668d01433a.bindTooltip(
+                `<div>
+                     <b>Lucknow, Uttar Pradesh</b><br>AQI: 125
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_99d307221839a6593e5db6850694f7b6 = L.circleMarker(
+                [17.6868, 83.2185],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_e17b0f5e30f4dcd5b74a2c3bef13e12f);
+        
+    
+            circle_marker_99d307221839a6593e5db6850694f7b6.bindTooltip(
+                `<div>
+                     <b>Visakhapatnam, Andhra Pradesh</b><br>AQI: 152
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d23f9e61bd338bebc406458ec34ddc0b = L.circleMarker(
+                [11.0168, 76.9558],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_e17b0f5e30f4dcd5b74a2c3bef13e12f);
+        
+    
+            circle_marker_d23f9e61bd338bebc406458ec34ddc0b.bindTooltip(
+                `<div>
+                     <b>Coimbatore, Tamil Nadu</b><br>AQI: 118
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_74515f4a8c70d7b42faed81af415589f = L.circleMarker(
+                [23.2599, 77.4126],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_e17b0f5e30f4dcd5b74a2c3bef13e12f);
+        
+    
+            circle_marker_74515f4a8c70d7b42faed81af415589f.bindTooltip(
+                `<div>
+                     <b>Bhopal, Madhya Pradesh</b><br>AQI: 187
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_34a06eb230b28b66e7426976fe95ffab = L.circleMarker(
+                [27.1767, 78.0081],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_e17b0f5e30f4dcd5b74a2c3bef13e12f);
+        
+    
+            circle_marker_34a06eb230b28b66e7426976fe95ffab.bindTooltip(
+                `<div>
+                     <b>Agra, Uttar Pradesh</b><br>AQI: 118
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            feature_group_e17b0f5e30f4dcd5b74a2c3bef13e12f.addTo(map_280f09a964c2e131774d713e0587279d);
+        
+    
+            var feature_group_0342bd461e8b28a1b6d28c5f6eb0df55 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_76456e6c32b8a625ec4a0f12e9e925b8 = L.circleMarker(
+                [28.6139, 77.209],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0342bd461e8b28a1b6d28c5f6eb0df55);
+        
+    
+            circle_marker_76456e6c32b8a625ec4a0f12e9e925b8.bindTooltip(
+                `<div>
+                     <b>Delhi, Delhi</b><br>AQI: 233
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_165fd6b974f2c50e8044956ec72bfa97 = L.circleMarker(
+                [13.0827, 80.2707],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0342bd461e8b28a1b6d28c5f6eb0df55);
+        
+    
+            circle_marker_165fd6b974f2c50e8044956ec72bfa97.bindTooltip(
+                `<div>
+                     <b>Chennai, Tamil Nadu</b><br>AQI: 294
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_320a7099a26c51bf4543192e9e4cdc04 = L.circleMarker(
+                [17.385, 78.4867],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0342bd461e8b28a1b6d28c5f6eb0df55);
+        
+    
+            circle_marker_320a7099a26c51bf4543192e9e4cdc04.bindTooltip(
+                `<div>
+                     <b>Hyderabad, Telangana</b><br>AQI: 300
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5f23ae34b2a6f0e98e3ddb6493d04b19 = L.circleMarker(
+                [26.4499, 80.3319],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0342bd461e8b28a1b6d28c5f6eb0df55);
+        
+    
+            circle_marker_5f23ae34b2a6f0e98e3ddb6493d04b19.bindTooltip(
+                `<div>
+                     <b>Kanpur, Uttar Pradesh</b><br>AQI: 237
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0d318665fbbcea8dac9806a528ed80f5 = L.circleMarker(
+                [22.7196, 75.8577],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0342bd461e8b28a1b6d28c5f6eb0df55);
+        
+    
+            circle_marker_0d318665fbbcea8dac9806a528ed80f5.bindTooltip(
+                `<div>
+                     <b>Indore, Madhya Pradesh</b><br>AQI: 289
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ece31e43d37a7b2d6e2b0f7800bc9014 = L.circleMarker(
+                [22.3072, 73.1812],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0342bd461e8b28a1b6d28c5f6eb0df55);
+        
+    
+            circle_marker_ece31e43d37a7b2d6e2b0f7800bc9014.bindTooltip(
+                `<div>
+                     <b>Vadodara, Gujarat</b><br>AQI: 282
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3ef400b1af234bd3a748c9f09e941db2 = L.circleMarker(
+                [19.9975, 73.7898],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0342bd461e8b28a1b6d28c5f6eb0df55);
+        
+    
+            circle_marker_3ef400b1af234bd3a748c9f09e941db2.bindTooltip(
+                `<div>
+                     <b>Nashik, Maharashtra</b><br>AQI: 218
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            feature_group_0342bd461e8b28a1b6d28c5f6eb0df55.addTo(map_280f09a964c2e131774d713e0587279d);
+        
+    
+            var layer_control_0281e42f60cfba6c328f4b8dcf237622_layers = {
+                base_layers : {
+                    "cartodbpositron" : tile_layer_348a6b9710815e655a2c4b5eea4804be,
+                },
+                overlays :  {
+                    "Good (AQI \u2264 100) \ud83d\udfe2" : feature_group_2990f267015be81924f465272e2844eb,
+                    "Moderate (AQI 101\u2013200) \ud83d\udfe0" : feature_group_e17b0f5e30f4dcd5b74a2c3bef13e12f,
+                    "Poor (AQI \u003e 200) \ud83d\udd34" : feature_group_0342bd461e8b28a1b6d28c5f6eb0df55,
+                },
+            };
+            let layer_control_0281e42f60cfba6c328f4b8dcf237622 = L.control.layers(
+                layer_control_0281e42f60cfba6c328f4b8dcf237622_layers.base_layers,
+                layer_control_0281e42f60cfba6c328f4b8dcf237622_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": false,
+  "autoZIndex": true,
+}
+            ).addTo(map_280f09a964c2e131774d713e0587279d);
+
+        
+</script>
+</html>
